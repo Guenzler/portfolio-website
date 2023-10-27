@@ -457,6 +457,10 @@ textarea {
   .profile__photo {
     width: 220px;
   }
+
+  .skills-table {
+    width: 100%;
+  }
 }
 
 @keyframes color-change {
