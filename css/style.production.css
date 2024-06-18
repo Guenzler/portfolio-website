@@ -1,3 +1,25 @@
+/* kanit-300 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/kanit-v15-latin-300.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* kanit-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/kanit-v15-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /*
 Colors used
 
@@ -112,7 +134,86 @@ label .open {
   display: none;
 }
 
+.opModalBtn {
+  font-size: 16px;
+  padding: 6px 10px;
+  margin-bottom: 0;
+  /* Remove any default margin */
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15px auto;
+  /* 15px from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  /* Could be more or less, depending on screen size */
+  max-width: 1024px;
+  height: 100vh;
+  overflow: auto;
+  overflow-y: scroll;
+  overflow: auto;
+  /* Enable scroll if content is too tall */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button-wrapper {
+  width: 100%;
+  text-align: right;
+  /* Align the button to the right */
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  padding-right: 15px;
+}
+
+.modalClose {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modalClose:hover,
+.modalClose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bottomClose {
+  float: left;
+  font-size: 16px;
+}
+
+.appScreens {
+  width: 48%;
+}
+
 @media all and (min-width: 540px) {
+
   /* display page header and menu for screens wider than 540px  */
   .page-header {
     display: -webkit-box;
@@ -289,8 +390,9 @@ textarea {
   }
 
   .grid__item {
+    position: relative;
     background-color: #e2e0e0;
-    padding: 0 10px;
+    padding: 0 10px 50px 10px;
     width: auto;
     min-height: auto;
     margin: 0;
@@ -302,6 +404,7 @@ textarea {
 }
 
 @media all and (max-width: 800px) {
+
   /* smaller margins and paddings for screens smaller than 800px and put picture on about me page below the text */
   .page-header {
     padding: 40px 60px;
@@ -329,6 +432,7 @@ textarea {
 }
 
 @media all and (max-width: 620px) {
+
   /* change margin and padding for smaller screens and put picture on profile page above text */
   .page-header {
     padding: 40px;
@@ -351,9 +455,11 @@ textarea {
     display: block;
     margin: 0 auto;
   }
+
 }
 
 @media all and (max-width: 540px) {
+
   /* for mobile screens: decrease line-heigt and font size, change display of page header and display hamburger menu */
   body {
     line-height: 1.4;
@@ -375,6 +481,18 @@ textarea {
     max-width: 100%;
     height: auto;
     padding: 40px 0 40px 40px;
+  }
+
+  .grid__item {
+    position: static;
+    padding: 0 10px 10px 10px;
+  }
+
+  .button-wrapper {
+    width: 100%;
+    text-align: right;
+    /* Align the button to the right */
+    position: static;
   }
 
   .main-navigation {
@@ -427,18 +545,18 @@ textarea {
     padding: 40px 40px 40px 0;
   }
 
-  .side-menu:checked ~ nav {
+  .side-menu:checked~nav {
     /* when checkbox (side-menu) is checked, display navigation */
     max-height: 100%;
   }
 
-  .side-menu:checked ~ label .close {
+  .side-menu:checked~label .close {
     /* when checkbox (side-menu) is checked, display close icon */
     display: block;
     padding: 40px 40px 40px 0;
   }
 
-  .side-menu:checked ~ label .open {
+  .side-menu:checked~label .open {
     /* when checkbox (side-menu) is checked, hide open icon */
     display: none;
   }
@@ -472,6 +590,10 @@ textarea {
   }
 
   .skills-table {
+    width: 100%;
+  }
+
+  .appScreens {
     width: 100%;
   }
 }

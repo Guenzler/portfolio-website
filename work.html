@@ -7,9 +7,6 @@
     <link rel="shortcut icon" href="img/favicon-eva.ico">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 
@@ -19,13 +16,13 @@
             <div class="page-header__item">
                 <img src="img/logo.png" alt="Eva Günzlers logo" class="logo">
             </div>
-             <!-- Hamburger icon -->
-             <input class="side-menu" type="checkbox" id="side-menu" />
-             <label class="hamb" for="side-menu">
-                 <span class="open"><img src="img/icon1.png" alt="click to open menu"></span>
-                 <span class="close"><img src="img/icon2.png" alt="click to close menu"></span>
-             </label>
-             <!-- Menu -->
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu">
+                <span class="open"><img src="img/icon1.png" alt="click to open menu"></span>
+                <span class="close"><img src="img/icon2.png" alt="click to close menu"></span>
+            </label>
+            <!-- Menu -->
             <nav class="main-navigation page-header__item">
                 <ul role="menubar" class="navigation-list">
                     <li role="presentation">
@@ -48,63 +45,195 @@
             <h1>My Work</h1>
             <div class="grid">
                 <div class="grid__item">
-                    <h2>Mobile web app</h2>
+                    <h2>Pokédex App</h2>
                     <p>
-                        here is some text describing details of my project, language, framework and so on
+                        A small web application built with HTML, CSS and vanilla JavaScript that loads pokemon data from
+                        an
+                        external API and enables the viewing of data points in detail.
                     </p>
                     <p>
-                        <a href="#">See project on Github</a>
+                        <a href="https://github.com/Guenzler/pokedex-app" target="_blank">See project on Github</a>
                     </p>
+                    <div class="button-wrapper">
+                        <button id="openModalBtn1" class="opModalBtn">See details</button>
+                    </div>
+                    <div id="myModal1" class="modal">
+                        <div class="modal-content">
+                            <span class="modalClose">&times;</span>
+                            <h2>Pokédex App</h2>
+                            <h3>Objective</h3>
+                            <p>To build a small web application with HTML, CSS, and JavaScript that loads
+                                data from an external API and enables the viewing of data points in detail</p>
+                            <h3>Screenshots</h3>
+                            <img src="img/screen-pokedex-1.png" alt="screenshot showing Pokedex App with navigation bar"
+                                class="appScreens">
+                            <img src="img/screen-pokedex-2.png"
+                                alt="screenshot showing Pokedex App with details modal and load more button"
+                                class="appScreens">
+                            <h3>Technologies used</h3>
+                            <ul>
+                                <li>App was created with vanilla JavaScript</li>
+                                <li>Data is loaded from pokeapi.co</li>
+                                <li>Bootstrap and jQuery used for styling and navigation bar</li>
+                            </ul>
+                            <p><a href="https://guenzler.github.io/pokedex-app/" target="_blank">Link to live app</a>
+                            </p>
+                            <p><a href="https://github.com/Guenzler/pokedex-app" target="_blank">See project on
+                                    Github</a></p>
+                            <span class="modalClose bottomClose">Close window</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="grid__item">
-                    <h2>Native MacOS applictaion</h2>
+                    <h2>Movie REST API</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        Server-side component of a web application built with Node.js, Express and MongoDB.<br> The app
+                        provides users with access to information
+                        about different movies, directors and genres. Users can sign up, update their
+                        personal information, and create a list of their favorite movies.
                     </p>
                     <p>
-                        <a href="#">See project on Github</a>
+                        <a href="https://github.com/Guenzler/movie_api" target="new">See project on Github</a>
                     </p>
-                </div>
-                <div class="grid__item">
-                    <h2>Node.js pdf generation</h2>
-                    <p>
-                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                        voluptua.
-                    </p>
-                    <p>
-                        <a href="#">See project on Github</a>
-                    </p>
-                </div>
-                <div class="grid__item">
-                    <h2>Styleguide for portfolio page</h2>
-                    <p>
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                    </p>
-                    <p>
-                        <a href="#">See styleguide</a>
-                    </p>
-                </div>
-                <div class="grid__item">
-                    <h2>Web application</h2>
-                    <p>
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                        takimata sanctus est Lorem ipsum dolor sit amet.
-                    </p>
-                    <p>
-                        <a href="#">See project</a>
-                    </p>
-                </div>
-                <div class="grid__item">
-                    <h2>Installation of CMS WordPress</h2>
-                    <p>
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                        takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
-                    </p>
-                    <p>
-                        <a href="#">See project</a>
-                    </p>
+                    <div class="button-wrapper">
+                        <button id="openModalBtn2" class="opModalBtn">See details</button>
+                    </div>
+                    <div id="myModal2" class="modal">
+                        <div class="modal-content">
+                            <span class="modalClose">&times;</span>
+                            <h2>Movie REST API</h2>
+                            <h3>Objective</h3>
+                            <p>To build the server-side component of a “movies” web application. The web
+                                application will provide users with access to information about different
+                                movies, directors, and genres. Users can able to sign up, update their
+                                personal information, and create a list of their favorite movies.</p>
+                            <h3>Technologies used</h3>
+                            <ul>
+                                <li>Node.js: JavaScript runtime environment</li>
+                                <li>Express: Back end web application framework for building RESTful APIs with Node.js
+                                </li>
+                                <li>MongoDB with Mongoose: NoSQL database and Object Data Modeling library for Node.js
+                                </li>
+                                <li>bcrypt: Express middleware for password hashing</li>
+                                <li>body-parser: Express middleware for parsing request bodies.</li>
+                                <li>express-validator: Middleware for input validation in Express.</li>
+                                <li>jsonwebtoken: Library for JWT ( JSON Web Token) generation and verification</li>
+                                <li>morgan: request logger middleware for Node.js</li>
+                                <li>passport: Authentication middleware for Node.js.</li>
+                                <li>passport-jwt: Passport strategy for JWT authentication.</li>
+                                <li>passport-local: Passport strategy for username/password authentication.</li>
+                                <li>swagger-jsdoc: library that reads JSDoc annotated source code and gereantes an OPen
+                                    API specification</li>
+                                <li>swagger-ui-express: Express middleware for auto-generating swager-ui generated API
+                                    docs</li>
+                            </ul>
+                            <p>The app is currently hosted with heroku.</p>
+                            <p><a href="https://movie-app-2024-716106e34297.herokuapp.com/swagger/"
+                                    target="_blank">Endpoint
+                                    documentation with swagger</a></p>
+                            <p><a href="https://movie-app-2024-716106e34297.herokuapp.com/" target="_blank">Link to live
+                                    project</a></p>
+                            <p><a href="https://github.com/Guenzler/movie_api" target="_blank">See project on Github</a>
+                            </p>
+                            <span class="modalClose bottomClose">Close window</span>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="grid__item">
+                    <h2>Movie App client</h2>
+                    <p>
+                        This React App is the client side component of the Movie REST API.<br>
+                        Users are provided with access to information about different movies, directors and genres.
+                        Users can sign up, update their personal information, and create a list of their favorite
+                        movies.
+                    </p>
+                    <p>
+                        <a href="https://github.com/Guenzler/myFlix-client" target="_blank">See project on Github</a>
+
+                    </p>
+                    <div class="button-wrapper">
+                        <button id="openModalBtn3" class="opModalBtn">See details</button>
+                    </div>
+                    <div id="myModal3" class="modal">
+                        <div class="modal-content">
+                            <span class="modalClose">&times;</span>
+                            <h2>Movie App client</h2>
+                            <h3>Objective</h3>
+                            <p>Using React, build the client-side for the movie app based on its
+                                existing server-side code (REST API and database).</p>
+                            <h3>Screenshots</h3>
+                            <img src="img/screen-movieapp-1.jpg" alt="screenshot showing movie app after login, displaying all movie cards"
+                                class="appScreens">
+                            <img src="img/screen-movieapp-2.jpg"
+                                alt="screenshot showing user profile of movie app"
+                                class="appScreens">
+                            <h3>Technologies used</h3>
+                            <ul>
+                                <li>React, React-DOM</li>
+                                <li>Bootstrap, React-Bootstrap</li>
+                                <li>Prop-Types</li>
+                                <li>React-Router, React-Router-DOM</li>
+                                <li>Parcel, Parcel/transformer-sass</li>
+                            </ul>
+                            <p>The client side app is currently hosted on netlifly.</p>
+                            <p><a href="https://movie-app-483832.netlify.app" target="_blank">Link to live app</a></p>
+                            <p><a href="https://github.com/Guenzler/myFlix-client" target="_blank">See project on Github</a></p>
+                            <span class="modalClose bottomClose">Close window</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <h2>Meet App</h2>
+                    <p>
+                        A serverless, progressive web application (PWA) with React using a test-driven development (TDD)
+                        technique. The application uses the Google Calendar API to fetch upcoming events.
+                    </p>
+                    <p>
+                        <a href="https://github.com/Guenzler/Meet_APP" target="_blank">See project on Github</a>
+                    </p>
+                    <div class="button-wrapper">
+                        <button id="openModalBtn4" class="opModalBtn">See details</button>
+                    </div>
+                    <div id="myModal4" class="modal">
+                        <div class="modal-content">
+                            <span class="modalClose">&times;</span>
+                            <h2>Meet App</h2>
+                            <h3>Objective</h3>
+                            <p>To build a serverless, progressive web application (PWA) with React using a
+                                test-driven development (TDD) technique. The application uses the Google
+                                Calendar API to fetch upcoming events.</p>
+
+                            <h3>Screenshots</h3>
+                            <img src="img/screen-meet-app-1.png"
+                                alt="screenshot showing Meet App input fields and data visualization"
+                                class="appScreens">
+                            <img src="img/screen-meet-app-2.png" alt="screenshot showing Meet App event list"
+                                class="appScreens">
+
+                            <h3>Technologies used in project</h3>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>AWS Lambda functions to handle authentication process with Google</li>
+                                <li>Google Calender API</li>
+                                <li>Test Driven Development</li>
+                                <li>Test runner jest for unit and integration tests</li>
+                                <li>Jest-cucumber for acceptance tests</li>
+                                <li>Pupeteer for end-to-end tests</li>
+                                <li>gh-pages for deploying and hosting with GitHub Pages</li>
+                                <li>Web App Manifest and Service Worker was implemented to convert app into a
+                                    Progressive Web Application</li>
+                                <li>Recharts for data visualization</li>
+                            </ul>
+                            <p><a href="https://guenzler.github.io/Meet_APP/" target="_blank">Link to live App</a><br>
+                                To view the app, login with a google account is required.
+                            </p>
+                            <p><a href="https://github.com/Guenzler/Meet_APP" target="_blank">See project on Github</a>
+                            </p>
+                            <span class="modalClose bottomClose">Close window</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -114,13 +243,15 @@
             </p>
             <div class="social-media">
                 <!-- Github logo -->
-                <a href="#"><img src="img/github_icon.svg" alt="github"></a>
+                <a href="https://github.com/Guenzler" target="_blank"><img src="img/github_icon.svg" alt="github"></a>
                 <!-- LinkedIn logo -->
                 <a href="#"><img src="img/linkedin_icon.svg" alt="linkedin"></a>
             </div>
         </footer>
     </div>
-    <script src="js/tota11y.min.js"></script>
+
+    <script src="js/script.js"></script>
+   <!--  <script src="js/tota11y.min.js"></script>  -->
 </body>
 
 </html>
